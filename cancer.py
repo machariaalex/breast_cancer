@@ -7,7 +7,7 @@ import joblib
 from sklearn.datasets import load_breast_cancer
 
 # Load the trained model
-model = joblib.load('breast_cancer_model.joblib')
+model = joblib.load('model.joblib')
 
 # Load the breast cancer dataset
 data = load_breast_cancer()
