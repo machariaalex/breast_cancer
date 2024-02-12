@@ -7,8 +7,11 @@ import joblib
 from sklearn.datasets import load_breast_cancer
 
 # Load the trained model
-model = joblib.load('breast_cancer_model.joblib')
+import pickle
 
+with open('cancer_model.pkl', 'rb') as file:
+    model = pickle.load(file)
+    
 # Load the breast cancer dataset
 data = load_breast_cancer()
 features = data.feature_names
