@@ -22,7 +22,7 @@ import requests  # Assuming you'll use requests library for API calls
 API_KEY = "AIzaSyAfSRafLWuXss-I-IpSvkqUlwTRptx1ilU"
 
 # Load the trained model
-model = joblib.load('/home/ndegwa/cancer/mode.joblib')
+model = joblib.load('breast_cancer_model.joblib')
 
 # Load the breast cancer dataset
 data = load_breast_cancer()
